@@ -112,14 +112,7 @@ for index, row in df[0:].iterrows():
      listAppendStrength.append(strength)
      listAppendTime.append(time)
  
- 
-# from sklearn import datasets
- 
- 
-# import pandas as pd
- 
- 
-# Import train_test_split function
+
 from sklearn.model_selection import train_test_split
  
 # Split dataset into training set and test set
@@ -140,20 +133,6 @@ from sklearn import metrics
 # Model Accuracy: how often is the classifier correct?
 print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
 print("Precision: " , sklearn.metrics.precision_score(y_test, y_pred, average = "weighted"))
-
- 
-#take output and input data in a different file
- 
- 
-# from sklearn import preprocessing, svm
-# from sklearn.model_selection import train_test_split
-# from sklearn.linear_model import LinearRegression
- # # Dropping any rows with Nan values
-# X_train, X_test, y_train, y_test = train_test_split(dfStrength, listTotalOutput, test_size = 0.25)
- # # Splitting the data into training and testing data
-# regr = LinearRegression()
- # regr.fit(X_train, y_train)
-# print(regr.score(X_test, y_test))
  
 from sklearn import tree
 from sklearn.model_selection import train_test_split # Import train_test_split function
@@ -190,11 +169,6 @@ logisticRegr.fit(x_train, y_train)
 predictions = logisticRegr.predict(x_test)
 score = logisticRegr.score(x_test, y_test)
 print(score)
- 
-#looks at models that can change the input width
-#r and n can be used to change the arrival length
-#load data from external file
-# use data interprolation
 
 
 
