@@ -142,62 +142,7 @@ for x in range(37643):
 print(timeX[0:5])
 print(listTotalVectors[0:5])
 
-# X_train, X_test, y_train, y_test = train_test_split(listTotalVectors, output, test_size=0.3) # 70% training and 30% test
-# from sklearn import svm
 
-# #Create a svm Classifier
-# clf = svm.SVC() #
-
-# #Train the model using the training sets
-# clf.fit(X_train, y_train)
-
-# #Predict the response for test dataset
-# y_pred = clf.predict(X_test)
-# from sklearn import metrics
-
-# # Model Accuracy: how often is the classifier correct?
-# print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
-# print("Precision: " , sklearn.metrics.precision_score(y_test, y_pred, average="weighted"))
-# print("F1 score: " , sklearn.metrics.f1_score(y_test, y_pred, average = "weighted"))
-
-# from sklearn import preprocessing, svm
-# from sklearn.model_selection import train_test_split
-# from sklearn.linear_model import LinearRegression
-#  # Dropping any rows with Nan values
-# X_train, X_test, y_train, y_test = train_test_split(listTotalVectors, output, test_size = 0.25)
-#  # Splitting the data into training and testing data
-# regr = LinearRegression()
-# regr.fit(X_train, y_train)
-# print(regr.score(X_test, y_test))
- 
-# from sklearn import tree
-# from sklearn.model_selection import train_test_split # Import train_test_split function
-# from sklearn.tree import DecisionTreeClassifier # Import Decision Tree Classifier
-# X_train, X_test, y_train, y_test = train_test_split(listTotalVectors,  output, test_size=0.3, random_state=1) # 70% training and 30% test
-# clf = DecisionTreeClassifier()
- 
-# # Train Decision Tree Classifer
-# clf = clf.fit(X_train,y_train)
- 
-# #Predict the response for test dataset
-# y_pred = clf.predict(X_test)
-# from sklearn import metrics #Import scikit-learn metrics module for accuracy calculation
- 
-# print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
-# print("Precision: " , sklearn.metrics.precision_score(y_test, y_pred, average="weighted"))
-# print("F1 score: " , sklearn.metrics.f1_score(y_test, y_pred, average = "weighted"))
-# clf = DecisionTreeClassifier(criterion="entropy", max_depth=12)
- 
-# # Train Decision Tree Classifer
-# clf = clf.fit(X_train,y_train)
- 
-# #Predict the response for test dataset
-# y_pred = clf.predict(X_test)
- 
-# # Model Accuracy, how often is the classifier correct?
-# print("Accuracy:",metrics.accuracy_score(y_test, y_pred))
-# print("Precision: " , sklearn.metrics.precision_score(y_test, y_pred, average = "weighted"))
-# print("F1 score: " , sklearn.metrics.f1_score(y_test, y_pred, average = "weighted"))
 from sklearn.model_selection import train_test_split
 x_train, x_test, y_train, y_test = train_test_split(listTotalVectors, output, test_size=0.25, random_state=0)
 from sklearn.linear_model import LogisticRegression
@@ -207,15 +152,3 @@ predictions = logisticRegr.predict(x_test)
 score = logisticRegr.score(x_test, y_test)
 print(score)
 from sklearn import metrics
-
-# Model Accuracy: how often is the classifier correct?
-
- 
-#can we add more lightbulbs and will that increase accuracy? 
-# if we only have two or three lightbulbs, if that decreases then we can add lightbulbs 
-# if we only have two lightbublbs, how will the models perfrom 
-#manipulate input data 
-#try 3 lightbulbs after 
-#precision, f1 scores, basic metrics 
-#summarize results in spreadsheet 
-#easier to manage data , recall, precision 
